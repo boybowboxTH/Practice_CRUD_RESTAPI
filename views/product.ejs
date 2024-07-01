@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gamelist</h1>
+    <% productlist.map((productlist)=>{ %>
+        <p><%=productlist.name%></p>
+        <p><%=productlist.code%></p>
+        <p><%=productlist.price%></p>
+        <a href="http://localhost:3000/gamelist/<%=productlist.id%>"><%=productlist.id%> click</a>
+    <%}) %>
+</body>
+</html>
